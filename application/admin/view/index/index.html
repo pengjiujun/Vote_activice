@@ -1,0 +1,60 @@
+{extend name="public:public"}
+{block name="title"}后台管理{/block}
+{block name="aa"}
+<div class="panel panel-default">
+    <div class="panel-bd">
+        <div class="panel panel-primary">
+            <div class="panel-hd"></div>
+            <div class="panel-bd">
+
+                <form>
+                    <h3>请选择活动是否开启？</h3><br />
+                    <input type= "radio" name= "sex " value= "1" onclick="check_sex(this)"/> 开启
+                    <input type= "radio" name= "sex " value= "2" onclick="check_sex(this)"/> 关闭
+                </form>
+                <div>当前选择的开启时间为:{$list.k_time}</div>
+                <div>当前选择的结束时间为:{$list.g_time}</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function check_sex(obj) {
+        // alert(obj.value);
+        if (obj.value == 2){
+            $.ajax({
+                url:'/admin/update',
+                type:'get',
+                data:{id:2},
+                success:function (data) {
+                    if (data.code == 200) {
+                        layer.msg(data.msg,{icon:6,time: 900})
+                    }
+                }
+            });
+        }
+        if (obj.value == 1){
+            $.ajax({
+                url:'/admin/date',
+                type:'get',
+                data:{id:1},
+                success:function (data) {
+                    layer.open({
+                        type: 2,
+                        title: '请选择开启时间',
+                        shadeClose: true,//点击阴影处关闭
+                        skin: 'layui-layer-demo', //加上边框
+                        area: ['600px', '600px'], //宽高
+                        content: 'date.html'
+                    })
+                }
+            });
+
+        }
+    }
+
+
+</script>
+
+{/block}

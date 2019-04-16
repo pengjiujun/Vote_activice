@@ -1,0 +1,108 @@
+{extend name="public:public"}
+{block name="title"}后台管理{/block}
+{block name="aa"}
+<div class="panel panel-default">
+    <div class="panel-bd">
+        <div class="panel panel-secondary">
+            <div class="panel-hd"></div>
+            <div class="panel-bd">
+                <section class="page-hd">
+                    <header>
+                        <h2 class="title">酒店管理</h2>
+                        <p class="title-description">
+                            <button class="btn btn-warning add">添加酒店</button>
+                        </p>
+                    </header>
+                    <hr>
+                </section>
+                <table class="table table-bordered table-striped table-hover">
+                    <!--<thead>-->
+                    <tr>
+                        <th>id</th>
+                        <th>酒店所在城市</th>
+                        <th>酒店地点</th>
+                        <th>操作</th>
+                    </tr>
+                    <!--</thead>-->
+                    <!--<tbody>-->
+                    {foreach $list as $v}
+                    <tr class="cen">
+                        <td>{$a++}</td>
+                        <td>{$v.city}</td>
+                        <td>{$v.name}</td>
+                        <td>
+                            <button class="btn btn-primary" name="{$v.id}">编辑</button>
+                            <button class="btn btn-danger" name="{$v.id}">删除</button>
+                        </td>
+                    </tr>
+                    {/foreach}
+                    <!--</tbody>-->
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //添加酒店
+    $(".add").click(function () {
+        $.ajax({
+            url: "/table/add",
+            type: "post",
+            data: {},
+            success: function (data) {
+                layer.open({
+                    type: 1,
+                    title: '添加酒店',
+                    shadeClose: true,//点击阴影处关闭
+                    skin: 'layui-layer-demo',//加上边框
+                    area: ['500px', '400px'],//宽高
+                    content: data
+                });
+            }
+        });
+    });
+    //点击编辑
+    $(".btn-primary").click(function () {
+        var id = $(this).attr('name');
+        $.ajax({
+            url: '/table/edit',
+            type: 'post',
+            data: {id: id},
+            success: function (data) {
+                layer.open({
+                    type: 1,
+                    title: '更改信息',
+                    skin: 'layui-layer-demo', //加上边框
+                    area: ['550px', '400px'], //宽高
+                    content: data
+                })
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        })
+    });
+    //点击删除
+    $(".btn-danger").click(function () {
+
+        // 获取id
+        var id = $(this).attr('name');
+
+        // 获取本条tr
+        ss = $(this).parents('tr');
+        layer.confirm('你确定要删除吗', ['删除', '取消'], function () {
+            $.get('/table/delete', {id: id}, function (data) {
+                if (data.code == 200) {
+                    ss.remove();
+                    layer.msg(data.msg, {icon: 6, time: 900});
+                }
+                if (data.code == 400) {
+                    layer.msg(data.message, {icon: 5, time: 900});
+                }
+            })
+        });
+    });
+
+
+</script>
+{/block}

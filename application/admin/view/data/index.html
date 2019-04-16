@@ -1,0 +1,57 @@
+{extend name="public:public"}
+{block name="title"}后台管理{/block}
+{block name="aa"}
+
+<div class="panel panel-default">
+    <div class="panel-bd">
+        <div class="panel panel-primary">
+            <div class="panel-hd"></div>
+            <div class="panel-bd">
+
+                <section class="page-hd">
+                    <header>
+                        <h2 class="title">信息列表</h2>
+                        <p class="title-description">
+                            <button class="btn btn-warning ee">导出全部信息</button>
+                        </p>
+                    </header>
+                    <hr>
+                </section>
+                <table class="table table-bordered table-striped mb-15" id="tableExcel">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>用户名</th>
+                        <th>所选地址</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {foreach name="data" item="row"}
+                    <tr class="cen">
+                        <td>{$row['id']}</td>
+                        <td>{$row['name']}</td>
+                        <td>{$row['hotel_id']}</td>
+                    </tr>
+                    {/foreach}
+                    </tbody>
+                </table>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    //导入excel
+    $('.ee').click(function () {
+        location.href = '/data/excel';
+    });
+
+</script>
+
+
+{/block}

@@ -1,0 +1,2514 @@
+---------------------------------------------------------------
+[ 2019-04-02T21:18:36+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.682920s] [吞吐率：1.46req/s] [内存消耗：1,124.63kb] [文件加载：35]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:18:36+08:00 ] 127.0.0.1 GET myadmin.tp/login/index
+[运行时间：0.039057s] [吞吐率：25.60req/s] [内存消耗：1,125.31kb] [文件加载：33]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ RUN ] app\admin\controller\Login->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:18:51+08:00 ] 127.0.0.1 POST myadmin.tp/login/log
+[运行时间：0.639140s] [吞吐率：1.56req/s] [内存消耗：1,798.13kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'postlog',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/login/index',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myadmin.tp',
+  'accept' => '*/*',
+  'content-length' => '23',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'admin',
+  'password' => '123',
+  'action' => 'log',
+)
+[ info ] [ RUN ] app\admin\controller\Login->postLog[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.183959s ] mysql:host=127.0.0.1;dbname=template;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user` [ RunTime:0.138129s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000516s ]
+---------------------------------------------------------------
+[ 2019-04-02T21:18:54+08:00 ] 127.0.0.1 POST myadmin.tp/login/log
+[运行时间：0.096025s] [吞吐率：10.41req/s] [内存消耗：1,799.70kb] [文件加载：40]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'postlog',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/login/index',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myadmin.tp',
+  'accept' => '*/*',
+  'content-length' => '26',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'admin',
+  'password' => '123123',
+  'action' => 'log',
+)
+[ info ] [ RUN ] app\admin\controller\Login->postLog[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=127.0.0.1;dbname=template;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user` [ RunTime:0.030746s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2019-04-02T21:18:54+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.087406s] [吞吐率：11.44req/s] [内存消耗：1,122.58kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/login/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:18:57+08:00 ] 127.0.0.1 GET myadmin.tp/table/index
+[运行时间：0.060809s] [吞吐率：16.44req/s] [内存消耗：1,130.26kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:19:00+08:00 ] 127.0.0.1 GET myadmin.tp/table/list
+[运行时间：0.047164s] [吞吐率：21.20req/s] [内存消耗：1,126.24kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getlist',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'list',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getList[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:19:03+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.071579s] [吞吐率：13.97req/s] [内存消耗：1,122.63kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/list',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:19:05+08:00 ] 127.0.0.1 GET myadmin.tp/table/index
+[运行时间：0.021583s] [吞吐率：46.33req/s] [内存消耗：1,130.28kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:19:07+08:00 ] 127.0.0.1 GET myadmin.tp/table/list
+[运行时间：0.025611s] [吞吐率：39.05req/s] [内存消耗：1,126.24kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getlist',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'list',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getList[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:19:12+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.033996s] [吞吐率：29.42req/s] [内存消耗：1,122.58kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/list',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:19:15+08:00 ] 127.0.0.1 GET myadmin.tp/table/index
+[运行时间：0.023354s] [吞吐率：42.82req/s] [内存消耗：1,130.26kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:19:19+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.021803s] [吞吐率：45.87req/s] [内存消耗：1,122.63kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:23:24+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.466139s] [吞吐率：2.15req/s] [内存消耗：1,252.17kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:24:57+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.050485s] [吞吐率：19.81req/s] [内存消耗：1,253.86kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:26:55+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.053942s] [吞吐率：18.54req/s] [内存消耗：1,262.36kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:27:15+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.035200s] [吞吐率：28.41req/s] [内存消耗：1,129.41kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:27:17+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.033559s] [吞吐率：29.80req/s] [内存消耗：1,129.41kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:28:53+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.054352s] [吞吐率：18.40req/s] [内存消耗：1,261.93kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:28:55+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.032776s] [吞吐率：30.51req/s] [内存消耗：1,129.84kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:29:01+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.021408s] [吞吐率：46.71req/s] [内存消耗：1,129.84kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:29:12+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.031316s] [吞吐率：31.93req/s] [内存消耗：1,129.84kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:29:14+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.035417s] [吞吐率：28.24req/s] [内存消耗：1,129.84kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:29:38+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.077890s] [吞吐率：12.84req/s] [内存消耗：1,262.36kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:29:39+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.022163s] [吞吐率：45.12req/s] [内存消耗：1,129.41kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:29:43+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.035545s] [吞吐率：28.13req/s] [内存消耗：1,129.41kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:30:06+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.026152s] [吞吐率：38.24req/s] [内存消耗：1,129.84kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:30:08+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.023576s] [吞吐率：42.42req/s] [内存消耗：1,129.41kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:30:10+08:00 ] 127.0.0.1 GET myadmin.tp/table/index
+[运行时间：0.022604s] [吞吐率：44.24req/s] [内存消耗：1,130.28kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:30:11+08:00 ] 127.0.0.1 GET myadmin.tp/table/list
+[运行时间：0.020654s] [吞吐率：48.42req/s] [内存消耗：1,126.24kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getlist',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'list',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getList[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:30:12+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.025191s] [吞吐率：39.70req/s] [内存消耗：1,122.58kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/list',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:30:13+08:00 ] 127.0.0.1 GET myadmin.tp/table/index
+[运行时间：0.022288s] [吞吐率：44.87req/s] [内存消耗：1,130.26kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:47:49+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.604556s] [吞吐率：1.65req/s] [内存消耗：1,253.35kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:47:52+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.021752s] [吞吐率：45.97req/s] [内存消耗：1,124.28kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:48:00+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.021784s] [吞吐率：45.91req/s] [内存消耗：1,124.28kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:50:00+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.025674s] [吞吐率：38.95req/s] [内存消耗：1,124.28kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:50:04+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.729393s] [吞吐率：1.37req/s] [内存消耗：1,253.80kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:50:07+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.022367s] [吞吐率：44.71req/s] [内存消耗：1,124.28kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:50:09+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.035868s] [吞吐率：27.88req/s] [内存消耗：1,124.28kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:50:11+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.021834s] [吞吐率：45.80req/s] [内存消耗：1,124.28kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:52:06+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.516122s] [吞吐率：1.94req/s] [内存消耗：1,253.80kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:52:09+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.029297s] [吞吐率：34.13req/s] [内存消耗：1,124.28kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:52:14+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.024641s] [吞吐率：40.58req/s] [内存消耗：1,124.28kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:53:34+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.087525s] [吞吐率：11.43req/s] [内存消耗：1,253.80kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:53:43+08:00 ] 127.0.0.1 GET myadmin.tp/table/index
+[运行时间：0.173964s] [吞吐率：5.75req/s] [内存消耗：1,130.26kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:53:44+08:00 ] 127.0.0.1 GET myadmin.tp/table/list
+[运行时间：0.070997s] [吞吐率：14.09req/s] [内存消耗：1,126.24kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getlist',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'list',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getList[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:53:46+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.067027s] [吞吐率：14.92req/s] [内存消耗：1,129.38kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/list',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:53:50+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.028135s] [吞吐率：35.54req/s] [内存消耗：1,123.85kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:56:31+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.167818s] [吞吐率：5.96req/s] [内存消耗：1,253.83kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:56:33+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.022854s] [吞吐率：43.76req/s] [内存消耗：1,124.30kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:57:00+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.074728s] [吞吐率：13.38req/s] [内存消耗：1,253.83kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:57:23+08:00 ] 127.0.0.1 GET myadmin.tp/table/index
+[运行时间：0.035424s] [吞吐率：28.23req/s] [内存消耗：1,130.26kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:57:24+08:00 ] 127.0.0.1 GET myadmin.tp/table/list
+[运行时间：0.020217s] [吞吐率：49.46req/s] [内存消耗：1,126.24kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getlist',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'list',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getList[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:57:26+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.040401s] [吞吐率：24.75req/s] [内存消耗：1,129.38kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/list',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:57:28+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.039029s] [吞吐率：25.62req/s] [内存消耗：1,123.85kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:57:29+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.034880s] [吞吐率：28.67req/s] [内存消耗：1,123.83kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:57:31+08:00 ] 127.0.0.1 GET myadmin.tp/table/index
+[运行时间：0.026943s] [吞吐率：37.12req/s] [内存消耗：1,130.26kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:57:32+08:00 ] 127.0.0.1 GET myadmin.tp/table/index
+[运行时间：0.029844s] [吞吐率：33.51req/s] [内存消耗：1,130.26kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Table',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Table->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Table.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\table\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T21:57:34+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：0.029391s] [吞吐率：34.02req/s] [内存消耗：1,129.38kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/table/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T22:15:40+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：1.228681s] [吞吐率：0.81req/s] [内存消耗：1,129.41kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T22:15:40+08:00 ] 127.0.0.1 GET myadmin.tp/merchant/index
+[运行时间：1.477344s] [吞吐率：0.68req/s] [内存消耗：1,129.41kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Merchant',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Merchant->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Merchant.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\merchant\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T22:22:43+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.340324s] [吞吐率：2.94req/s] [内存消耗：1,253.38kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/merchant/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T22:22:45+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.026628s] [吞吐率：37.55req/s] [内存消耗：1,123.83kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-02T22:34:38+08:00 ] 127.0.0.1 GET myadmin.tp/admin/index
+[运行时间：0.034589s] [吞吐率：28.91req/s] [内存消耗：1,123.83kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=4449309696; PHPSESSID=6eor7mj6iq1tvrf1ctoi0imunm',
+  'accept-language' => 'zh-CN,zh;q=0.9,und;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myadmin.tp/admin/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myadmin.tp',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->getIndex[ E:\phpStudy\PHPTutorial\WWW\myAdmin\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

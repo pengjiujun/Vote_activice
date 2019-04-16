@@ -1,0 +1,3 @@
+---------------------------------------------------------------
+[ 2019-03-26T20:58:30+08:00 ] 127.0.0.1 GET myadmin.tp/index.php/login/index
+[ error ] [0]模板文件不存在:E:\phpStudy\PHPTutorial\WWW\myAdmin\public/../application/admin\view\..\login\index.html
